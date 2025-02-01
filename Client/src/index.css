@@ -114,6 +114,7 @@ a {
 
 .lang-modal {
   position: absolute;
+  z-index: 1;
   background-color: rgb(247, 246, 246);
 
   width: 100px;
@@ -159,7 +160,7 @@ a {
 
 .bg-image {
   position: absolute;
-  z-index: -1;
+  z-index: -10;
   height: 100%;
   width: auto;
   left: -100px;
@@ -170,7 +171,7 @@ a {
   height: 438px;
   top: 30px;
   left: 13px;
-  border: 1px solid red;
+  z-index: 0;
   position: relative;
   padding-top: 5px;
 }
@@ -182,6 +183,8 @@ a {
   font-weight: 700;
   font-size: 55px;
   line-height: 70px;
+  position: relative;
+  z-index: 100;
 }
 
 .main-info {
@@ -252,4 +255,164 @@ a {
   transform: translateY(-40%);
   z-index: -1;
   background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+}
+
+.bg2-img {
+  position: absolute;
+  right: 0;
+  width: 534px;
+  height: 437px;
+  top: 30px;
+  z-index: 0;
+}
+
+.bg2-main {
+  width: 100%;
+  height: 100%;
+}
+
+.qr {
+  width: 202px;
+  height: 205px;
+  position: absolute;
+  left: 20px;
+  bottom: 40px;
+}
+
+.globe {
+  width: 178px;
+  height: 130px;
+  position: absolute;
+  top: 0;
+  right: 100px;
+}
+
+/*Work section style*/
+.work-container {
+  width: 1100px;
+  height: 469px;
+  margin-top: 100px;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+.work-title {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: center;
+}
+.work-cards {
+  margin-top: 50px;
+  display: flex;
+  gap: 103px;
+}
+
+.first-card,
+.second-card,
+.third-card {
+  width: 298px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.img-container {
+  max-width: 200px;
+  width: 200px;
+  margin-inline: auto;
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-img {
+  width: 96px;
+  height: 192px;
+  max-width: 96px;
+  margin-inline: auto;
+}
+.second-img {
+  width: 183px;
+  height: 139px;
+  max-height: 139px;
+  margin-block: auto;
+}
+.card-title {
+  font-size: 30px;
+  color: var(--text-color);
+  font-weight: 38px;
+  text-align: center;
+  font-weight: 600;
+  white-space: no-wrap;
+}
+
+.card-text {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: var(--text-color);
+}
+.vector {
+  width: 15px;
+  position: absolute;
+  right: -50px;
+  top: 25%;
+}
+
+/* ====== Career section ====================== */
+.career-section {
+  position: relative;
+  margin-top: 100px;
+}
+
+.career-main {
+  width: 1240px;
+  height: 588px;
+}
+
+.career-title {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 70px;
+  color: var(--text-color);
+}
+
+.career-text {
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  line-height: 38px;
+  margin-top: 50px;
+  font-weight: 400;
+}
+.career-cards {
+  width: 1240px;
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+}
+.card {
+  width: 298px;
+}
+
+.upper-card {
+  width: 100%;
+  height: 275px;
+  background-color: var(--pink);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.career-card-title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 38px;
+  color: var(--text-color);
+  text-align: center;
 }
